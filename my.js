@@ -71,7 +71,7 @@ if (isValidInput2) {
 } 
 
 }
-    //////2 яасть
+    //////2 часть
      else if(countUserSeats > taba && countUserSeats <= sharm){
       // haveSeats = true;
      const userInput2 = prompt('под ваш критерий подходят 1 - sharm, 2 - hurgada', );   
@@ -119,7 +119,7 @@ if (isValidInput2) {
       
 }
     /////конец 2 части
-    ////3 part
+    ////3 часть
     else if(countUserSeats > sharm && countUserSeats <= hurgada){
       // haveSeats = true;
      const userInput2 = prompt('под ваш критерий подходит только hurgada - введите 2 если согластны  ', );   
@@ -168,28 +168,16 @@ if (isValidInput2) {
     alert('Нам очень жаль, приходите еще!');}
   
 } 
-    ///////
-  
-  
-      
-  ////////////////    
+ 
 } 
       
-      
-      
-}
-    
-    /////ebd 3 part
-    
-    
-    
+}  
+    /////конец 3 части
     
     else {
   alert('Нет столько мест!!!');
 }
  
-        
-   
   }
 
   else {
