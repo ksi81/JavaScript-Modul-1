@@ -12,7 +12,7 @@ const sharmTur = 1;
 const hurgadaTur = 2;
 
 //   Когда пользователь посещает страницу, ему необходимо предложить ввести число необходимых мест,
-const userInput = prompt('Введите количество необходимых мест', 'от 1 до 25');
+const userInput = prompt('Мы агенстов продающие поездки в 3-х группах: sharm, hurgada и taba. Введите количество необходимых мест', 'от 1 до 25');
 //   результат сохранить в переменную.
 const countUserSeats = Number(userInput);
 const isValidInput = userInput !== null && !Number.isNaN(countUserSeats);
@@ -22,7 +22,7 @@ if (isValidInput) {
   if (countUserSeats) {
     if(countUserSeats <= taba){
     //   haveSeats = true;
-     const userInput2 = prompt('под ваш критерий подходят 0 - taba, 1 - sharm, 2 - hurgada', );   
+     const userInput2 = prompt('Под ваш критерий подходят такие туры 0 - taba, 1 - sharm, 2 - hurgada. Введите цифру:', );   
 const turChoice = Number(userInput2);
 const isValidInput2 = userInput2 !== null && !Number.isNaN(turChoice);
 if (isValidInput2) {
@@ -73,7 +73,7 @@ if (isValidInput2) {
 }
     //////2 яасть
      else if(countUserSeats > taba && countUserSeats <= sharm){
-      haveSeats = true;
+      // haveSeats = true;
      const userInput2 = prompt('под ваш критерий подходят 1 - sharm, 2 - hurgada', );   
 const turChoice = Number(userInput2);
 const isValidInput2 = userInput2 !== null && !Number.isNaN(turChoice);
@@ -121,8 +121,8 @@ if (isValidInput2) {
     /////конец 2 части
     ////3 part
     else if(countUserSeats > sharm && countUserSeats <= hurgada){
-      haveSeats = true;
-     const userInput2 = prompt('под ваш критерий подходят только hurgada - введите 2 если согластны  ', );   
+      // haveSeats = true;
+     const userInput2 = prompt('под ваш критерий подходит только hurgada - введите 2 если согластны  ', );   
 const turChoice = Number(userInput2);
 const isValidInput2 = userInput2 !== null && !Number.isNaN(turChoice);
 if (isValidInput2) {
