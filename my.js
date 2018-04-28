@@ -19,58 +19,53 @@ const isValidInput = userInput !== null && !Number.isNaN(countUserSeats) && user
 console.log(isValidInput);
 // Необходимо проверить является ли введенные данные целым положительным числом. 
 if (isValidInput) {
- 
   if (countUserSeats) {
     if(countUserSeats <= taba){
     //   haveSeats = true;
      const userInput2 = prompt('Под ваш критерий подходят такие туры 0 - taba, 1 - sharm, 2 - hurgada. Введите цифру:', );   
-const turChoice = Number(userInput2);
-const isValidInput2 = userInput2 !== null && !Number.isNaN(turChoice);
-if (isValidInput2) {
-  let haveTur;
-  let tur;
-  switch (turChoice) {
-    case tabaTur:
-      haveTur = true;
-      console.log(haveTur);
-      tur = "taba";
-      break;
+    const turChoice = Number(userInput2);
+    const isValidInput2 = userInput2 !== null && !Number.isNaN(turChoice);
+      if (isValidInput2) {
+        let haveTur;
+        let tur;
+          switch (turChoice) {
+            case tabaTur:
+              haveTur = true;
+              console.log(haveTur);
+              tur = "taba";
+            break;
       
-      case sharmTur:
-      haveTur = true;
-      console.log(haveTur);
-      tur = "sharm";
-      break;
-      
-      case hurgadaTur:
-      haveTur = true;
-      console.log(haveTur);
-      tur = "hurgada";
-      break;
+            case sharmTur:
+              haveTur = true;
+              console.log(haveTur);
+              tur = "sharm";
+            break;
+            
+            case hurgadaTur:
+              haveTur = true;
+              console.log(haveTur);
+              tur = "hurgada";
+            break;
 
-    default:
-      haveTur = false;
-  }
- 
-  if (haveTur) {
-    alert(`Вы заказали ${countUserSeats} мест в ${tur} .Приятного путешествия в группе!`);
-    if (`${tur}` === "hurgada"){
-      hurgada = (hurgada - countUserSeats);
-         console.log(` ${tur} - Осталось количесво мест ${hurgada}`);
-    } else if (`${tur}` === "taba"){
-    taba = (taba - countUserSeats);
-         console.log(`${tur} - Осталось количесво мест ${taba}`);
-    } else if ("sharm"){
-    sharm = (sharm - countUserSeats);
-         console.log(`${tur} - Осталось количесво мест ${sharm}`);}
-  
-   else  {
-    alert('Нам очень жаль, приходите еще!');}
-  
+            default:
+              haveTur = false;
+      }
+        if (haveTur) {
+              alert(`Вы заказали ${countUserSeats} мест в ${tur} .Приятного путешествия в группе!`);
+          if (`${tur}` === "hurgada"){
+            hurgada = (hurgada - countUserSeats);
+              console.log(` ${tur} - Осталось количесво мест ${hurgada}`);
+          } else if (`${tur}` === "taba"){
+          taba = (taba - countUserSeats);
+              console.log(`${tur} - Осталось количесво мест ${taba}`);
+          } else if ("sharm"){
+          sharm = (sharm - countUserSeats);
+              console.log(`${tur} - Осталось количесво мест ${sharm}`);}
+          else  {
+              alert('Нам очень жаль, приходите еще!');}
+        
+}   
 } 
-   
-} 
-
 }
     //////2 часть
      else if(countUserSeats > taba && countUserSeats <= sharm){
@@ -130,18 +125,7 @@ if (isValidInput2) {
   let haveTur;
   let tur;
   switch (turChoice) {
-//     case tabaTur:
-//       haveTur = true;
-//       console.log(haveTur);
-//       tur = "taba";
-//       break;
-      
-//       case sharmTur:
-//       haveTur = true;
-//       console.log(haveTur);
-//       tur = "sharm";
-      // break;
-      
+
       case hurgadaTur:
       haveTur = true;
       console.log(haveTur);
@@ -169,20 +153,14 @@ if (isValidInput2) {
     alert('Нам очень жаль, приходите еще!');}
   
 } 
- 
-} 
-      
+}     
 }  
     /////конец 3 части
     
     else {
   alert('Нет столько мест!!!');
 }
- 
   }
-
- 
-
 }
 else {
   alert('Невалидный ввод!!!');
