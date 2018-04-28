@@ -15,7 +15,8 @@ const hurgadaTur = 2;
 const userInput = prompt('Мы агенстов продающие поездки в 3-х группах: sharm, hurgada и taba. Введите количество необходимых мест', 'от 1 до 25');
 //   результат сохранить в переменную.
 const countUserSeats = Number(userInput);
-const isValidInput = userInput !== null && !Number.isNaN(countUserSeats);
+const isValidInput = userInput !== null && !Number.isNaN(countUserSeats) && userInput >0;
+console.log(isValidInput);
 // Необходимо проверить является ли введенные данные целым положительным числом. 
 if (isValidInput) {
  
@@ -180,12 +181,12 @@ if (isValidInput2) {
  
   }
 
-  else {
-  alert('Невалидный ввод!!!');
-}
+ 
 
 }
-    
+else {
+  alert('Невалидный ввод!!!');
+}  
    
   
       
